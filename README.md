@@ -23,7 +23,7 @@ LLMs interview notes and answers
 - [ ] **[大模型（LLMs）训练集面](./大模型（LLMs）训练集面.md)**
 - [ ] **[大模型（LLMs）显存问题面](./大模型（LLMs）显存问题面.md)**
 - [ ] **[大模型（LLMs）分布式训练面](./大模型（LLMs）分布式训练面.md)**
-- [ ] **[大模型（LLMs）agent 面](./大模型（LLMs）agent 面.md)**
+- [ ] **[大模型（LLMs）agent 面](./大模型（LLMs）agent面.md)**
 
 
 

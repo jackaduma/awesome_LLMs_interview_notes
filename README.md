@@ -1,51 +1,55 @@
 # awesome_LLMs_interview_notes
 LLMs interview notes and answers
 
+问题来自 [LLMs 千面郎君](https://github.com/km1994/LLMs_interview_notes)
+
+**答案 为 自己编写，不保证正确，仅供参考。**
+
 ## [大模型（LLMs）基础面](./大模型（LLMs）基础面.md)
 
-## [大模型（LLMs）进阶面](https://articles.zsxq.com/id_i5m3wfkdzwq9.html)
+## [大模型（LLMs）进阶面](./大模型（LLMs）进阶面.md)
 
-## [大模型（LLMs）微调面](https://articles.zsxq.com/id_u62mcnga3jkd.html)
+## [大模型（LLMs）微调面](./大模型（LLMs）微调面.md)
 
 ## 大模型（LLMs）langchain 面
 
-### [大模型（LLMs）langchain 面](https://articles.zsxq.com/id_ve2dgaiqrjzv.html)
+### [大模型（LLMs）langchain 面](./大模型（LLMs）langchain 面.md)
 
-### [基于LLM+向量库的文档对话 经验面](https://articles.zsxq.com/id_dfwoe4vgpang.html)
+### [基于LLM+向量库的文档对话 经验面](./基于LLM+向量库的文档对话 经验面.md)
 
-## [大模型（LLMs）参数高效微调(PEFT) 面](https://articles.zsxq.com/id_ahk2br3igwx9.html)
+## [大模型（LLMs）参数高效微调(PEFT) 面](./大模型（LLMs）参数高效微调(PEFT) 面.md)
 
-### [大模型（LLMs）参数高效微调(PEFT) 面](https://articles.zsxq.com/id_ipkod91a939n.html)
+### [大模型（LLMs）参数高效微调(PEFT) 面](./大模型（LLMs）参数高效微调(PEFT) 面.md)
 
-### [配器微调（Adapter-tuning）篇](https://articles.zsxq.com/id_h5q2fzq8wvt8.html)
+### [配器微调（Adapter-tuning）篇](./配器微调（Adapter-tuning）篇.md)
 
-### [提示学习（Prompting）](https://articles.zsxq.com/id_662wpbw47gtj.html)
+### [提示学习（Prompting）](./提示学习（Prompting）.md)
   
-### [LoRA 系列篇](https://articles.zsxq.com/id_ip2tnqn9st2v.html)
+### [LoRA 系列篇](./LoRA 系列篇.md)
 
 
-## [大模型（LLMs）推理面](https://articles.zsxq.com/id_64vc5vvwpobv.html)
+## [大模型（LLMs）推理面](./大模型（LLMs）推理面.md)
 
 
-## [大模型（LLMs）评测面](https://articles.zsxq.com/id_z3bis84sxb9x.html)
+## [大模型（LLMs）评测面](./大模型（LLMs）评测面.md)
 
 
-## [大模型（LLMs）强化学习面](https://articles.zsxq.com/id_uru2bfwhg34c.html)
+## [大模型（LLMs）强化学习面](./大模型（LLMs）强化学习面.md)
 
 
-## [大模型（LLMs）软硬件配置面](https://articles.zsxq.com/id_m5q8zk3wo84k.html)
+## [大模型（LLMs）软硬件配置面](./大模型（LLMs）软硬件配置面.md)
 
 
-## [大模型（LLMs）训练集面](https://articles.zsxq.com/id_jwvpaujrojtt.html)
+## [大模型（LLMs）训练集面](./大模型（LLMs）训练集面.md)
 
 
-## [大模型（LLMs）显存问题面](https://articles.zsxq.com/id_jhiocx89p3su.html)
+## [大模型（LLMs）显存问题面](./大模型（LLMs）显存问题面.md)
 
 
-## [大模型（LLMs）分布式训练面]()
+## [大模型（LLMs）分布式训练面](./大模型（LLMs）分布式训练面.md)
 
 
-## [大模型（LLMs）agent 面]()
+## [大模型（LLMs）agent 面](./大模型（LLMs）agent 面.md)
 
 
 

@@ -1,7 +1,7 @@
 # awesome_LLMs_interview_notes
 LLMs interview notes and answers
 
-问题来自 [LLMs 千面郎君](https://github.com/km1994/LLMs_interview_notes)
+问题来自 [LLMs 千面郎君： km1994 - LLMs_interview_notes ](https://github.com/km1994/LLMs_interview_notes)
 
 **答案 为 自己编写，不保证正确，仅供参考。**
 

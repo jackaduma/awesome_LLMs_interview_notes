@@ -16,7 +16,7 @@ LLMs interview notes and answers
   - [ ] **[适配器微调（Adapter-tuning）篇](./适配器微调（Adapter-tuning）篇.md)**
   - [ ] **[提示学习（Prompting）](./提示学习（Prompting）.md)**
   - [ ] **[LoRA 系列篇](./LoRA系列篇.md)**
-- [ ] **[大模型（LLMs）推理面](./大模型（LLMs）推理面.md)**
+- [x] **[大模型（LLMs）推理面](./大模型（LLMs）推理面.md)**
 - [ ] **[大模型（LLMs）评测面](./大模型（LLMs）评测面.md)**
 - [ ] **[大模型（LLMs）强化学习面](./大模型（LLMs）强化学习面.md)**
 - [ ] **[大模型（LLMs）软硬件配置面](./大模型（LLMs）软硬件配置面.md)**

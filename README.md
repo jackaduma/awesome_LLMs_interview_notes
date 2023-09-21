@@ -7,7 +7,7 @@ LLMs interview notes and answers
 
 - [x] **[大模型（LLMs）基础面](./大模型（LLMs）基础面.md)**
 - [x] **[大模型（LLMs）进阶面](./大模型（LLMs）进阶面.md)**
-- [ ] **[大模型（LLMs）微调面](./大模型（LLMs）微调面.md)**
+- [x] **[大模型（LLMs）微调面](./大模型（LLMs）微调面.md)**
 - [ ] **[大模型（LLMs）langchain 面]()**
   - [ ] **[大模型（LLMs）langchain 面](./大模型（LLMs）langchain面.md)**
   - [ ] **[基于LLM+向量库的文档对话 经验面](./基于LLM+向量库的文档对话经验面.md)**

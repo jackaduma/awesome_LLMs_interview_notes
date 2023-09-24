@@ -1,7 +1,5 @@
 # 基于LLM+向量库的文档对话经验面
 
-Parent item: 大模型（LLMs）langchain面 (https://www.notion.so/LLMs-langchain-3c201f6939e647a3846b23eaf3619a08?pvs=21)
-
 1. 基于LLM+向量库的文档对话 基础面
     1. 💡 **LLMs 存在模型幻觉问题，请问如何处理？**
         

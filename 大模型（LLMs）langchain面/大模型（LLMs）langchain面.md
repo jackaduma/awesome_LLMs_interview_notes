@@ -1,7 +1,5 @@
 # 大模型（LLMs）langchain面
 
-Parent item: 大模型（LLMs）langchain面 (https://www.notion.so/LLMs-langchain-3c201f6939e647a3846b23eaf3619a08?pvs=21)
-
 1. 什么是 LangChain?
     
     <aside>

@@ -46,7 +46,47 @@ LLMs interview notes and answers
   - [x] 23. 模型参数迭代实验
 - [x] **[大模型（LLMs）langchain面]()**
   - [x] **[大模型（LLMs）langchain 面](./大模型（LLMs）langchain面/大模型（LLMs）langchain面.md)**
+    - [ ] 1. 什么是 LangChain?
+    - [ ] 2. LangChain 包含哪些 核心概念？
+      - [ ] 1. LangChain 中 Components and Chains 是什么？
+      - [ ] 2. LangChain 中 Prompt Templates and Values 是什么？
+      - [ ] 3. LangChain 中 Example Selectors 是什么？
+      - [ ] 4. LangChain 中 Output Parsers 是什么？
+      - [ ] 5. LangChain 中 Indexes and Retrievers 是什么？
+      - [ ] 6. LangChain 中 Chat Message History 是什么？
+      - [ ] 7. LangChain 中 Agents and Toolkits 是什么？
+    - [ ] 3. 什么是 LangChain Agent?
+    - [ ] 4. 如何使用 LangChain ?
+    - [ ] 5. LangChain 支持哪些功能?
+    - [ ] 6. 什么是 LangChain model?
+    - [ ] 7. LangChain 包含哪些特点?
+    - [ ] 8. LangChain 如何使用?
+      - [ ] 1. LangChain 如何调用 LLMs 生成回复？
+      - [ ] 2. LangChain 如何修改 提示模板？
+      - [ ] 3. LangChain 如何链接多个组件处理一个特定的下游任务？
+      - [ ] 4. LangChain 如何Embedding & vector store？
+    - [ ] 9. LangChain 存在哪些问题及方法方案？
+      - [ ] 1. LangChain 低效的令牌使用问题
+      - [ ] 2. LangChain 文档的问题
+      - [ ] 3. LangChain 太多概念容易混淆，过多的“辅助”函数问题
+      - [ ] 4. LangChain 行为不一致并且隐藏细节问题
+      - [ ] 5. LangChain 缺乏标准的可互操作数据类型问题
+    - [ ] 10. LangChain 替代方案？
   - [x] **[基于LLM+向量库的文档对话 经验面](./大模型（LLMs）langchain面/基于LLM+向量库的文档对话经验面.md)**
+    - [ ] 1. 基于LLM+向量库的文档对话 基础面
+      - [ ] 1. LLMs 存在模型幻觉问题，请问如何处理？
+      - [ ] 2. 基于LLM+向量库的文档对话 思路是怎么样？
+      - [ ] 3. 基于LLM+向量库的文档对话 核心技术是什么？
+      - [ ] 4. 基于LLM+向量库的文档对话 prompt 模板 如何构建？
+    - [ ] 2. 基于LLM+向量库的文档对话 优化面
+      - [ ] 1. 痛点1：文档切分粒度不好把控，既担心噪声太多又担心语义信息丢失
+      - [ ] 2. 痛点2：在基于垂直领域 表现不佳
+      - [ ] 3. 痛点3：langchain 内置 问答分句效果不佳问题
+      - [ ] 4. 痛点4：如何 尽可能召回与query相关的Document 问题
+      - [ ] 5. 痛点5：如何让LLM基于query和context得到高质量的response
+    - [ ] 3. 基于LLM+向量库的文档对话 工程示例面
+      - [ ] 1. 避坑记录
+      - [ ] 2. 本地知识库问答系统（Langchain-chatGLM）
 - [x] **[大模型（LLMs）参数高效微调(PEFT) 面]()**
   - [x] **[大模型（LLMs）参数高效微调(PEFT) 面](./大模型（LLMs）参数高效微调(PEFT)面/大模型（LLMs）参数高效微调(PEFT)面.md)**
   - [x] **[适配器微调（Adapter-tuning）篇](./大模型（LLMs）参数高效微调(PEFT)面/适配器微调（Adapter-tuning）篇.md)**

@@ -1,6 +1,5 @@
 # 大模型（LLMs）参数高效微调(PEFT) 面
 
-Parent item: 大模型（LLMs）参数高效微调(PEFT) 面 (https://www.notion.so/LLMs-PEFT-c6b948d38e8d45e29d497bfb437b1bca?pvs=21)
 
 - 微调方法是啥？如何微调？
     

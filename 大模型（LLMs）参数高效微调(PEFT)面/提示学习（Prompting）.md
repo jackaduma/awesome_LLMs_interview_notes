@@ -1,7 +1,5 @@
 # 提示学习（Prompting）
 
-Parent item: 大模型（LLMs）参数高效微调(PEFT) 面 (https://www.notion.so/LLMs-PEFT-c6b948d38e8d45e29d497bfb437b1bca?pvs=21)
-
 - 一、为什么需要 提示学习（Prompting）？
     
     <aside>

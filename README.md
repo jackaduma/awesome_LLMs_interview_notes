@@ -11,11 +11,11 @@ LLMs interview notes and answers
 - [x] **[大模型（LLMs）langchain面]()**
   - [x] **[大模型（LLMs）langchain 面](./大模型（LLMs）langchain面/大模型（LLMs）langchain面.md)**
   - [x] **[基于LLM+向量库的文档对话 经验面](./大模型（LLMs）langchain面/基于LLM+向量库的文档对话经验面.md)**
-- [ ] **[大模型（LLMs）参数高效微调(PEFT) 面]()**
+- [x] **[大模型（LLMs）参数高效微调(PEFT) 面]()**
   - [x] **[大模型（LLMs）参数高效微调(PEFT) 面](./大模型（LLMs）参数高效微调(PEFT)面/大模型（LLMs）参数高效微调(PEFT)面.md)**
   - [x] **[适配器微调（Adapter-tuning）篇](./大模型（LLMs）参数高效微调(PEFT)面/适配器微调（Adapter-tuning）篇.md)**
-  - [ ] **[提示学习（Prompting）](./大模型（LLMs）参数高效微调(PEFT)面/提示学习（Prompting）.md)**
-  - [ ] **[LoRA 系列篇](./大模型（LLMs）参数高效微调(PEFT)面/LoRA系列篇.md)**
+  - [x] **[提示学习（Prompting）](./大模型（LLMs）参数高效微调(PEFT)面/提示学习（Prompting）.md)**
+  - [x] **[LoRA 系列篇](./大模型（LLMs）参数高效微调(PEFT)面/LoRA系列篇.md)**
 - [x] **[大模型（LLMs）推理面](./大模型（LLMs）推理面.md)**
 - [x] **[大模型（LLMs）评测面](./大模型（LLMs）评测面.md)**
 - [x] **[大模型（LLMs）强化学习面](./大模型（LLMs）强化学习面.md)**

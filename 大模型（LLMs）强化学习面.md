@@ -1,6 +1,5 @@
 # 大模型（LLMs）强化学习面
 
-Parent item: LLMs 千面郎君 (https://www.notion.so/LLMs-b7f78187bf1448079659eb2c01ccd2a7?pvs=21)
 
 1. 💡 **奖励模型需要和基础模型一致吗？**
     

@@ -185,5 +185,25 @@ LLMs interview notes and answers
   - [ ] 如何给LLM注入领域知识？
   - [ ] 如果想要快速体验各种模型，该怎么办？
 
+------
+## **Star-History**
 
+![star-history](https://api.star-history.com/svg?repos=jackaduma/awesome_LLMs_interview_notes&type=Date "star-history")
+
+------
+
+## Donation
+If this project help you reduce time to develop, you can give me a cup of coffee :) 
+
+AliPay(支付宝)
+<div align="center">
+	<img src="./misc/ali_pay.png" alt="ali_pay" width="400" />
+</div>
+
+WechatPay(微信)
+<div align="center">
+    <img src="./misc/wechat_pay.png" alt="wechat_pay" width="400" />
+</div>
+
+------
 

@@ -13,7 +13,9 @@
             给定输入 $x$，其维度为 $(\text{batch size}, \text{seq length}, \text{hidden size})$，Layer Norm 的计算公式为：
             
             $$
+            
             \text{LayerNorm}(x) = \frac{a}{\sigma} \odot (x - \mu) + b
+            
             $$
             
             其中，$\mu$ 是 $x$ 沿最后一个维度的均值，$\sigma$ 是 $x$ 沿最后一个维度的标准差，$a$ 和 $b$ 是可学习的缩放因子和偏置项。$\odot$ 表示逐元素相乘。
@@ -39,7 +41,7 @@
             
             RMS Norm（均方根归一化）是一种用于神经网络中的归一化技术，用于提高模型的训练效果和泛化能力。其计算公式如下：
             
-            给定输入 $x$，其维度为 $(\text{batch\_size}, \text{seq\_length}, \text{hidden\_size})$，RMS Norm 的计算公式为：
+            给定输入 $x$，其维度为 $(\text{batch size}, \text{seq length}, \text{hidden size})$，RMS Norm 的计算公式为：
             
             $$
             

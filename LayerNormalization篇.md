@@ -12,7 +12,9 @@
             
             给定输入 $x$，其维度为 $(\text{batch\_size}, \text{seq\_length}, \text{hidden\_size})$，Layer Norm 的计算公式为：
             
-            $$\text{LayerNorm}(x) = \frac{a}{\sigma} \odot (x - \mu) + b$$
+            $$
+            \text{LayerNorm}(x) = \frac{a}{\sigma} \odot (x - \mu) + b
+            $$
             
             其中，$\mu$ 是 $x$ 沿最后一个维度的均值，$\sigma$ 是 $x$ 沿最后一个维度的标准差，$a$ 和 $b$ 是可学习的缩放因子和偏置项。$\odot$ 表示逐元素相乘。
             

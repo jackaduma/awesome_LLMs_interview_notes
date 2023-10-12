@@ -23,7 +23,7 @@
             3. 计算归一化的 $x$： $x_{\text{norm}} = \frac{x - \mu}{\sigma}$
             4. 计算缩放因子和偏置项： $y = a \odot x_{\text{norm}} + b$
             
-            其中，$a$ 和 $b$ 是可学习的参数，可以通过反向传播进行训练。
+            其中， $a$ 和 $b$ 是可学习的参数，可以通过反向传播进行训练。
             
             Layer Norm 的作用是将每个样本的特征进行归一化，使得特征在不同样本之间具有相似的分布，有助于提高模型的训练效果和泛化能力。
             
@@ -41,13 +41,13 @@
             
             $$\text{RMSNorm}(x) = \frac{x}{\sqrt{\text{mean}(x^2, \text{axis}=-1, \text{keepdims=True}) + \epsilon}}$$
             
-            其中，$\epsilon$ 是一个小的常数，用于避免分母为零。
+            其中， $\epsilon$ 是一个小的常数，用于避免分母为零。
             
             具体计算过程如下：
             
-            1. 计算 $x$ 的平方：$x^2 = x \odot x$
-            2. 计算平方的均值：$\text{mean}(x^2) = \text{mean}(x^2, \text{axis}=-1, \text{keepdims=True})$
-            3. 计算归一化的 $x$：$x_{\text{norm}} = \frac{x}{\sqrt{\text{mean}(x^2) + \epsilon}}$
+            1. 计算 $x$ 的平方： $x^2 = x \odot x$
+            2. 计算平方的均值： $\text{mean}(x^2) = \text{mean}(x^2, \text{axis}=-1, \text{keepdims=True})$
+            3. 计算归一化的 $x$： $x_{\text{norm}} = \frac{x}{\sqrt{\text{mean}(x^2) + \epsilon}}$
             
             RMS Norm 的作用是通过计算输入 $x$ 的均方根，将每个样本的特征进行归一化，使得特征在不同样本之间具有相似的尺度，有助于提高模型的训练效果和泛化能力。
             

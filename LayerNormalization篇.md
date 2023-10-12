@@ -10,9 +10,7 @@
             
             Layer Norm（层归一化）是一种用于神经网络中的归一化技术，用于提高模型的训练效果和泛化能力。其计算公式如下：
             
-            给定输入 $x$，其维度为 
-            $$(\text{batch\_size}, \text{seq\_length}, \text{hidden\_size})$$
-            ，Layer Norm 的计算公式为：
+            给定输入 $x$，其维度为 $(\text{batch size}, \text{seq length}, \text{hidden size})$，Layer Norm 的计算公式为：
             
             $$
             \text{LayerNorm}(x) = \frac{a}{\sigma} \odot (x - \mu) + b

@@ -14,14 +14,14 @@
             
             $$\text{LayerNorm}(x) = \frac{a}{\sigma} \odot (x - \mu) + b$$
             
-            其中，$\mu$ 是 $x$ 沿最后一个维度的均值，$\sigma$ 是 $x$ 沿最后一个维度的标准差，$a$ 和 $b$ 是可学习的缩放因子和偏置项。$\odot$ 表示逐元素相乘。
+            其中， $\mu$ 是 $x$ 沿最后一个维度的均值， $\sigma$ 是 $x$ 沿最后一个维度的标准差， $a$ 和 $b$ 是可学习的缩放因子和偏置项。$\odot$ 表示逐元素相乘。
             
             具体计算过程如下：
             
-            1. 计算均值 $\mu$：$\mu = \text{mean}(x, \text{axis}=-1, \text{keepdims=True})$
-            2. 计算标准差 $\sigma$：$\sigma = \text{std}(x, \text{axis}=-1, \text{keepdims=True})$
-            3. 计算归一化的 $x$：$x_{\text{norm}} = \frac{x - \mu}{\sigma}$
-            4. 计算缩放因子和偏置项：$y = a \odot x_{\text{norm}} + b$
+            1. 计算均值 $\mu$： $\mu = \text{mean}(x, \text{axis}=-1, \text{keepdims=True})$
+            2. 计算标准差 $\sigma$： $\sigma = \text{std}(x, \text{axis}=-1, \text{keepdims=True})$
+            3. 计算归一化的 $x$： $x_{\text{norm}} = \frac{x - \mu}{\sigma}$
+            4. 计算缩放因子和偏置项： $y = a \odot x_{\text{norm}} + b$
             
             其中，$a$ 和 $b$ 是可学习的参数，可以通过反向传播进行训练。
             

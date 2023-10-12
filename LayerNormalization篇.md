@@ -39,9 +39,7 @@
             
             给定输入 $x$，其维度为 $(\text{batch size}, \text{seq length}, \text{hidden size})$，RMS Norm 的计算公式为：
             
-            $$
-            \text{RMSNorm}(x) = \frac{x}{\sqrt{\text{mean}(x^2, \text{axis}=-1, \text{keepdims=True}) + \epsilon}}
-            $$
+            $$\text{RMSNorm}(x) = \frac{x}{\sqrt{\text{mean}(x^2, \text{axis}=-1, \text{keepdims=True}) + \epsilon}}$$
             
             其中，$\epsilon$ 是一个小的常数，用于避免分母为零。
             

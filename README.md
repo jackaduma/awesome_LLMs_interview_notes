@@ -185,58 +185,58 @@ LLMs interview notes and answers
   - [ ] 如何给LLM注入领域知识？
   - [ ] 如果想要快速体验各种模型，该怎么办？
 - [ ] **[Token及模型参数准备篇](./Token及模型参数准备篇.md)**
-  - [ ] 预训练数据 Token 重复 是否影响 模型性能？
+  - [x] 预训练数据 Token 重复 是否影响 模型性能？
   - [ ] SFT需要训练Token数？
 - [ ] **[LLMs 位置编码篇](./LLMs位置编码篇.md)**
-  - [ ] 1 什么是位置编码？
-  - [ ] 2 什么是绝对位置编码？
-  - [ ] 3 什么是相对位置编码？
+  - [x] 1 什么是位置编码？
+  - [x] 2 什么是绝对位置编码？
+  - [x] 3 什么是相对位置编码？
   - [ ] 4 旋转位置编码 RoPE篇
-    - [ ] 4.1 旋转位置编码 RoPE 思路是什么？
+    - [x] 4.1 旋转位置编码 RoPE 思路是什么？
     - [ ] 4.2 推导一下 旋转位置编码 RoPE ？
-    - [ ] 4.3 旋转位置编码 RoPE 有什么优点？
+    - [x] 4.3 旋转位置编码 RoPE 有什么优点？
     - [ ] 4.4 旋转位置编码 RoPE 被哪些 LLMs 应用？
   - [ ] 5 长度外推问题篇
-    - [ ] 5.1 什么是 长度外推问题？
-    - [ ] 5.2 长度外推问题 的 解决方法 有哪些？
+    - [x] 5.1 什么是 长度外推问题？
+    - [x] 5.2 长度外推问题 的 解决方法 有哪些？
   - [ ] 6 ALiBi (Attention with Linear Biases)篇
-    - [ ] 6.1 ALiBi (Attention with Linear Biases) 思路是什么？
-    - [ ] 6.2 ALiBi (Attention with Linear Biases) 的偏置矩阵是什么？有什么作用？
-    - [ ] 6.3 ALiBi (Attention with Linear Biases) 有什么优点？
+    - [x] 6.1 ALiBi (Attention with Linear Biases) 思路是什么？
+    - [x] 6.2 ALiBi (Attention with Linear Biases) 的偏置矩阵是什么？有什么作用？
+    - [x] 6.3 ALiBi (Attention with Linear Biases) 有什么优点？
     - [ ] 6.4 ALiBi (Attention with Linear Biases) 被哪些 LLMs 应用？
 - [ ] **[LLMs Tokenizer 篇](./LLMs%20Tokenizer%20篇/)**
-  - [ ] **[LLMs Tokenizer 篇](./LLMs%20Tokenizer%20篇/LLMs%20Tokenizer篇.md)**
-    - [ ] Byte-Pair Encoding(BPE)篇
-      - [ ] 1 Byte-Pair Encoding(BPE) 如何构建词典？
-    - [ ] WordPiece 篇
-      - [ ] 1 WordPiece 与 BPE 异同点是什么？
-    - [ ] SentencePiece 篇
-      - [ ] 简单介绍一下 SentencePiece 思路？
-    - [ ] 对比篇
-      - [ ] 1 举例 介绍一下 不同 大模型LLMs 的分词方式？
-      - [ ] 2 介绍一下 不同 大模型LLMs 的分词方式 的区别？
-- [ ] **[Layer Normalization 篇](./LayerNormalization篇.md)**
-  - [ ] Layer normalization-方法篇
-    - [ ] Layer Norm 篇
-      - [ ] Layer Norm 的计算公式写一下？
-    - [ ] RMS Norm 篇 （均方根 Norm）
-      - [ ] RMS Norm 的计算公式写一下？
-      - [ ] RMS Norm 相比于 Layer Norm 有什么特点？
-    - [ ] Deep Norm 篇
-      - [ ] Deep Norm 思路？
-      - [ ] 写一下 Deep Norm 代码实现？
-    - [ ] Deep Norm 有什么优点？
-  - [ ] Layer normalization-位置篇
-    - [ ] 1 LN 在 LLMs 中的不同位置 有什么区别么？如果有，能介绍一下区别么？
-  - [ ] Layer normalization 对比篇
-    - [ ] LLMs 各模型分别用了 哪种 Layer normalization？
+  - [x] **[LLMs Tokenizer 篇](./LLMs%20Tokenizer%20篇/LLMs%20Tokenizer篇.md)**
+    - [x] Byte-Pair Encoding(BPE)篇
+      - [x] 1 Byte-Pair Encoding(BPE) 如何构建词典？
+    - [x] WordPiece 篇
+      - [x] 1 WordPiece 与 BPE 异同点是什么？
+    - [x] SentencePiece 篇
+      - [x] 简单介绍一下 SentencePiece 思路？
+    - [x] 对比篇
+      - [x] 1 举例 介绍一下 不同 大模型LLMs 的分词方式？
+      - [x] 2 介绍一下 不同 大模型LLMs 的分词方式 的区别？
+- [x] **[Layer Normalization 篇](./LayerNormalization篇.md)**
+  - [x] Layer normalization-方法篇
+    - [x] Layer Norm 篇
+      - [x] Layer Norm 的计算公式写一下？
+    - [x] RMS Norm 篇 （均方根 Norm）
+      - [x] RMS Norm 的计算公式写一下？
+      - [x] RMS Norm 相比于 Layer Norm 有什么特点？
+    - [x] Deep Norm 篇
+      - [x] Deep Norm 思路？
+      - [x] 写一下 Deep Norm 代码实现？
+    - [x] Deep Norm 有什么优点？
+  - [x] Layer normalization-位置篇
+    - [x] 1 LN 在 LLMs 中的不同位置 有什么区别么？如果有，能介绍一下区别么？
+  - [x] Layer normalization 对比篇
+    - [x] LLMs 各模型分别用了 哪种 Layer normalization？
 - [ ] **[LLMs 激活函数篇](./LLMs激活函数篇.md)**
-  - [ ] 1 介绍一下 FFN 块 计算公式？
-  - [ ] 2 介绍一下 GeLU 计算公式？
-  - [ ] 3 介绍一下 Swish 计算公式？
-  - [ ] 4 介绍一下 使用 GLU 线性门控单元的 FFN 块 计算公式？
-  - [ ] 5 介绍一下 使用 GeLU 的 GLU 块 计算公式？
-  - [ ] 6 介绍一下 使用 Swish 的 GLU 块 计算公式？
+  - [x] 1 介绍一下 FFN 块 计算公式？
+  - [x] 2 介绍一下 GeLU 计算公式？
+  - [x] 3 介绍一下 Swish 计算公式？
+  - [x] 4 介绍一下 使用 GLU 线性门控单元的 FFN 块 计算公式？
+  - [x] 5 介绍一下 使用 GeLU 的 GLU 块 计算公式？
+  - [x] 6 介绍一下 使用 Swish 的 GLU 块 计算公式？
   - [ ] 各LLMs 都使用哪种激活函数？
 
 ------

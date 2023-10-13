@@ -1,10 +1,18 @@
 # awesome_LLMs_interview_notes
 LLMs interview notes and answers
 
+## **内容说明**
+
 问题来自 [LLMs 千面郎君： km1994 - LLMs_interview_notes ](https://github.com/km1994/LLMs_interview_notes)
 
-# **答案 为 自己编写，不保证正确，仅供参考。**
-## **有些问题，提供的答案更多是一种线索，如想深入了解，请自行参考更多资料**
+**答案 为 自己编写，不保证正确，仅供参考。**
+
+**有些问题，提供的答案更多是一种线索，如想深入了解，请自行参考更多资料**
+
+## 更新记录
+
+1. 2023.09 发布： 大模型（LLMs）基础面，大模型（LLMs）进阶面，大模型（LLMs）微调面，大模型（LLMs）langchain面，基于LLM+向量库的文档对话 经验面，大模型（LLMs）参数高效微调(PEFT) 面，大模型（LLMs）推理面，大模型（LLMs）评测面，大模型（LLMs）强化学习面， 大模型（LLMs）训练集面， 大模型（LLMs）agent 面
+2. 2023.10 新增：Token及模型参数准备篇， LLMs 位置编码篇， LLMs Tokenizer 篇， Layer Normalization 篇， LLMs 激活函数篇
 
 ## 目录
 

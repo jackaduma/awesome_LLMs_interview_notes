@@ -250,6 +250,8 @@ LLMs interview notes and answers
   - [x] 6 介绍一下 使用 Swish 的 GLU 块 计算公式？
   - [ ] 各LLMs 都使用哪种激活函数？
 
+## BLOG 
+[llm大模型训练知乎专栏](https://www.zhihu.com/column/c_1252604770952642560)
 ------
 ## **Star-History**
 

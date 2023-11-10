@@ -1,98 +1,85 @@
-#LLM #langchain 
-# 大模型（LLMs）langchain面
+#LLM #langchain #面试 
 
-1. 什么是 LangChain?
-    
-    <aside>
-    💡 [https://python.langchain.com/docs/get_started/introduction](https://python.langchain.com/docs/get_started/introduction)
-    
-    LangChain 是一个基于语言模型的框架，用于构建聊天机器人、生成式问答（GQA）、摘要等功能。它的核心思想是将不同的组件“链”在一起，以创建更高级的语言模型应用。LangChain 的起源可以追溯到 2022 年 10 月，由创造者 Harrison Chase 在那时提交了第一个版本。与 Bitcoin 不同，Bitcoin 是在 2009 年由一位使用化名 Satoshi Nakamoto 的未知人士创建的，它是一种去中心化的加密货币。而 LangChain 是围绕语言模型构建的框架。
-    
-    </aside>
-    
-2. LangChain 包含哪些 核心概念？
-    1. LangChain 中 Components and Chains 是什么？
-        
-        <aside>
-        💡 [https://python.langchain.com/docs/modules/chains/](https://python.langchain.com/docs/modules/chains/)
-        
-        Components and Chains are key concepts in the LangChain framework.
-        
-        Components refer to the individual building blocks or modules that make up the LangChain framework. These components can include language models, data preprocessors, response generators, and other functionalities. Each component is responsible for a specific task or functionality within the language model application.
-        
-        Chains, on the other hand, are the connections or links between these components. They define the flow of data and information within the language model application. Chains allow the output of one component to serve as the input for another component, enabling the creation of more advanced language models.
-        
-        In summary, Components are the individual modules or functionalities within the LangChain framework, while Chains define the connections and flow of data between these components.
-        
-        Here's an example to illustrate the concept of Components and Chains in LangChain:
-        
-        ```python
-        from langchain import Component, Chain
-        
-        # Define components
-        preprocessor = Component("Preprocessor")
-        language_model = Component("Language Model")
-        response_generator = Component("Response Generator")
-        
-        # Define chains
-        chain1 = Chain(preprocessor, language_model)
-        chain2 = Chain(language_model, response_generator)
-        
-        # Execute chains
-        input_data = "Hello, how are you?"
-        processed_data = chain1.execute(input_data)
-        response = chain2.execute(processed_data)
-        
-        print(response)
-        ```
-        
-        In the above example, we have three components: Preprocessor, Language Model, and Response Generator. We create two chains: chain1 connects the Preprocessor and Language Model, and chain2 connects the Language Model and Response Generator. The input data is passed through chain1 to preprocess it and then passed through chain2 to generate a response.
-        
-        This is a simplified example to demonstrate the concept of Components and Chains in LangChain. In a real-world scenario, you would have more complex chains with multiple components and data transformations.
-        
-        </aside>
-        
-    2. LangChain 中 Prompt Templates and Values 是什么？
-        
-        <aside>
-        💡 [https://python.langchain.com/docs/modules/model_io/prompts/prompt_templates/](https://python.langchain.com/docs/modules/model_io/prompts/prompt_templates/)
-        
-        Prompt Templates and Values are key concepts in the LangChain framework.
-        
-        Prompt Templates refer to predefined structures or formats that guide the generation of prompts for language models. These templates provide a consistent and standardized way to construct prompts by specifying the desired input and output formats. Prompt templates can include placeholders or variables that are later filled with specific values.
-        
-        Values, on the other hand, are the specific data or information that is used to fill in the placeholders or variables in prompt templates. These values can be dynamically generated or retrieved from external sources. They provide the necessary context or input for the language model to generate the desired output.
-        
-        Here's an example to illustrate the concept of Prompt Templates and Values in LangChain:
-        
-        ```python
-        from langchain import PromptTemplate, Value
-        
-        # Define prompt template
-        template = PromptTemplate("What is the capital of {country}?")
-        
-        # Define values
-        country_value = Value("country", "France")
-        
-        # Generate prompt
-        prompt = template.generate_prompt(values=[country_value])
-        
-        print(prompt)
-        ```
-        
-        In the above example, we have a prompt template that asks for the capital of a country. The template includes a placeholder **`{country}`** that will be filled with the actual country value. We define a value object **`country_value`** with the name "country" and the value "France". We then generate the prompt by passing the value object to the template's **`generate_prompt`** method.
-        
-        The generated prompt will be "What is the capital of France?".
-        
-        Prompt templates and values allow for flexible and dynamic generation of prompts in the LangChain framework. They enable the customization and adaptation of prompts based on specific requirements or scenarios.
-        
-        </aside>
-        
-    3. LangChain 中 Example Selectors 是什么？
-        
-        <aside>
-        💡 [https://python.langchain.com/docs/modules/model_io/prompts/example_selectors/](https://python.langchain.com/docs/modules/model_io/prompts/example_selectors/)
-        
+### 1 什么是 LangChain?
+
+[https://python.langchain.com/docs/get_started/introduction](https://python.langchain.com/docs/get_started/introduction)
+
+LangChain 是一个基于语言模型的框架，用于构建聊天机器人、生成式问答（GQA）、摘要等功能。它的核心思想是将不同的组件“链”在一起，以创建更高级的语言模型应用。LangChain 的起源可以追溯到 2022 年 10 月，由创造者 Harrison Chase 在那时提交了第一个版本。与 Bitcoin 不同，Bitcoin 是在 2009 年由一位使用化名 Satoshi Nakamoto 的未知人士创建的，它是一种去中心化的加密货币。而 LangChain 是围绕语言模型构建的框架。
+
+### 2 LangChain 包含哪些 核心概念？
+##### 1 LangChain 中 Components and Chains 是什么？
+
+ [https://python.langchain.com/docs/modules/chains/](https://python.langchain.com/docs/modules/chains/)
+
+Components and Chains are key concepts in the LangChain framework.
+
+Components refer to the individual building blocks or modules that make up the LangChain framework. These components can include language models, data preprocessors, response generators, and other functionalities. Each component is responsible for a specific task or functionality within the language model application.
+
+Chains, on the other hand, are the connections or links between these components. They define the flow of data and information within the language model application. Chains allow the output of one component to serve as the input for another component, enabling the creation of more advanced language models.
+
+In summary, Components are the individual modules or functionalities within the LangChain framework, while Chains define the connections and flow of data between these components.
+
+Here's an example to illustrate the concept of Components and Chains in LangChain:
+
+```python
+from langchain import Component, Chain
+
+# Define components
+preprocessor = Component("Preprocessor")
+language_model = Component("Language Model")
+response_generator = Component("Response Generator")
+
+# Define chains
+chain1 = Chain(preprocessor, language_model)
+chain2 = Chain(language_model, response_generator)
+
+# Execute chains
+input_data = "Hello, how are you?"
+processed_data = chain1.execute(input_data)
+response = chain2.execute(processed_data)
+
+print(response)
+```
+
+In the above example, we have three components: Preprocessor, Language Model, and Response Generator. We create two chains: chain1 connects the Preprocessor and Language Model, and chain2 connects the Language Model and Response Generator. The input data is passed through chain1 to preprocess it and then passed through chain2 to generate a response.
+
+This is a simplified example to demonstrate the concept of Components and Chains in LangChain. In a real-world scenario, you would have more complex chains with multiple components and data transformations.
+
+##### 2 LangChain 中 Prompt Templates and Values 是什么？
+[https://python.langchain.com/docs/modules/model_io/prompts/prompt_templates/](https://python.langchain.com/docs/modules/model_io/prompts/prompt_templates/)
+
+Prompt Templates and Values are key concepts in the LangChain framework.
+
+Prompt Templates refer to predefined structures or formats that guide the generation of prompts for language models. These templates provide a consistent and standardized way to construct prompts by specifying the desired input and output formats. Prompt templates can include placeholders or variables that are later filled with specific values.
+
+Values, on the other hand, are the specific data or information that is used to fill in the placeholders or variables in prompt templates. These values can be dynamically generated or retrieved from external sources. They provide the necessary context or input for the language model to generate the desired output.
+
+Here's an example to illustrate the concept of Prompt Templates and Values in LangChain:
+
+```python
+from langchain import PromptTemplate, Value
+
+# Define prompt template
+template = PromptTemplate("What is the capital of {country}?")
+
+# Define values
+country_value = Value("country", "France")
+
+# Generate prompt
+prompt = template.generate_prompt(values=[country_value])
+
+print(prompt)
+```
+
+In the above example, we have a prompt template that asks for the capital of a country. The template includes a placeholder **`{country}`** that will be filled with the actual country value. We define a value object **`country_value`** with the name "country" and the value "France". We then generate the prompt by passing the value object to the template's **`generate_prompt`** method.
+
+The generated prompt will be "What is the capital of France?".
+
+Prompt templates and values allow for flexible and dynamic generation of prompts in the LangChain framework. They enable the customization and adaptation of prompts based on specific requirements or scenarios.
+
+##### 3 LangChain 中 Example Selectors 是什么？
+[https://python.langchain.com/docs/modules/model_io/prompts/example_selectors/](https://python.langchain.com/docs/modules/model_io/prompts/example_selectors/)
+
         Example Selectors are a feature in the LangChain framework that allow users to specify and retrieve specific examples or data points from a dataset. These selectors help in customizing the training or inference process by selecting specific examples that meet certain criteria or conditions.
         
         Example Selectors can be used in various scenarios, such as:
@@ -120,14 +107,10 @@
         In the above example, we define an example selector with a condition that selects examples with a label equal to "positive". We then use the selector to retrieve the selected examples from a dataset. These selected examples can be used for training or inference purposes.
         
         Example Selectors provide a flexible way to customize the data used in the LangChain framework. They allow users to focus on specific subsets of the data or apply specific criteria to select examples that meet their requirements.
-        
-        </aside>
-        
-    4. LangChain 中 Output Parsers 是什么？
-        
-        <aside>
-        💡 [https://python.langchain.com/docs/modules/model_io/output_parsers/](https://python.langchain.com/docs/modules/model_io/output_parsers/)
-        
+
+##### 4 LangChain 中 Output Parsers 是什么？
+[https://python.langchain.com/docs/modules/model_io/output_parsers/](https://python.langchain.com/docs/modules/model_io/output_parsers/)
+
         Output Parsers are a feature in the LangChain framework that allow users to automatically detect and parse the output generated by the language model. These parsers are designed to handle different types of output, such as strings, lists, dictionaries, or even Pydantic models.
         
         Output Parsers provide a convenient way to process and manipulate the output of the language model without the need for manual parsing or conversion. They help in extracting relevant information from the output and enable further processing or analysis.
@@ -163,10 +146,8 @@
         In the above example, we define an output parser and apply it to the **`generate_response`** function using the **`llm_prompt`** decorator. The output parser automatically detects the type of the output and provides the parsed output. We can then further process or analyze the parsed output as needed.
         
         Output Parsers provide a flexible and efficient way to handle the output of the language model in the LangChain framework. They simplify the post-processing of the output and enable seamless integration with other components or systems.
-        
-        </aside>
-        
-    5. LangChain 中 Indexes and Retrievers 是什么？
+
+##### 5 LangChain 中 Indexes and Retrievers 是什么？
         
         <aside>
         💡 [https://python.langchain.com/docs/modules/data_connection/retrievers/](https://python.langchain.com/docs/modules/data_connection/retrievers/)
@@ -183,11 +164,9 @@
         
         </aside>
         
-    6. LangChain 中 Chat Message History 是什么？
-        
-        <aside>
-        💡 [https://python.langchain.com/docs/modules/memory/chat_messages/](https://python.langchain.com/docs/modules/memory/chat_messages/)
-        
+##### 6 LangChain 中 Chat Message History 是什么？
+[https://python.langchain.com/docs/modules/memory/chat_messages/](https://python.langchain.com/docs/modules/memory/chat_messages/)
+
         Chat Message History 是 Langchain 框架中的一个组件，用于存储和管理聊天消息的历史记录。它可以跟踪和保存用户和AI之间的对话，以便在需要时进行检索和分析。
         
         Langchain 提供了不同的 Chat Message History 实现，包括 StreamlitChatMessageHistory、CassandraChatMessageHistory 和 MongoDBChatMessageHistory。
@@ -199,14 +178,10 @@
         您可以根据自己的需求选择适合的 Chat Message History 实现，并将其集成到 Langchain 框架中，以便记录和管理聊天消息的历史记录。
         
         请注意，Chat Message History 的具体用法和实现细节可以参考 Langchain 的官方文档和示例代码。
-        
-        </aside>
-        
-    7. LangChain 中 Agents and Toolkits 是什么？
-        
-        <aside>
-        💡 [https://python.langchain.com/docs/modules/agents/](https://python.langchain.com/docs/modules/agents/)
-        
+
+##### 7 LangChain 中 Agents and Toolkits 是什么？
+[https://python.langchain.com/docs/modules/agents/](https://python.langchain.com/docs/modules/agents/)
+
         [https://python.langchain.com/docs/modules/agents/toolkits/](https://python.langchain.com/docs/modules/agents/toolkits/)
         
         Agents and Toolkits in LangChain are components that are used to create and manage conversational agents.
@@ -249,14 +224,10 @@
         ```
         
         This is just a basic example, and there are many more features and functionalities available in LangChain for building and customizing agents and toolkits. You can refer to the LangChain documentation for more details and examples.
-        
-        </aside>
-        
-3. 什么是 LangChain Agent?
-    
-    <aside>
-    💡 [https://python.langchain.com/docs/modules/agents/](https://python.langchain.com/docs/modules/agents/)
-    
+
+### 3 什么是 LangChain Agent?
+ [https://python.langchain.com/docs/modules/agents/](https://python.langchain.com/docs/modules/agents/)
+
     LangChain Agent 是 LangChain 框架中的一个组件，用于创建和管理对话代理。代理是根据当前对话状态确定下一步操作的组件。LangChain 提供了多种创建代理的方法，包括 OpenAI Function Calling、Plan-and-execute Agent、Baby AGI 和 Auto GPT 等。这些方法提供了不同级别的自定义和功能，用于构建代理。
     
     代理可以使用工具包执行特定的任务或操作。工具包是代理使用的一组工具，用于执行特定的功能，如语言处理、数据操作和外部 API 集成。工具可以是自定义构建的，也可以是预定义的，涵盖了广泛的功能。
@@ -295,10 +266,8 @@
     ```
     
     这只是一个基本示例，LangChain 中还有更多功能和功能可用于构建和自定义代理和工具包。您可以参考 LangChain 文档以获取更多详细信息和示例。
-    
-    </aside>
-    
-4. 如何使用 LangChain ?
+
+### 4 如何使用 LangChain ?
     
     <aside>
     💡 [https://python.langchain.com/docs/get_started/quickstart](https://python.langchain.com/docs/get_started/quickstart)
@@ -318,15 +287,10 @@
     ```
     
     This code will send the question "What is the capital of France?" to the LangChain API and print the response. You can customize the request by providing parameters like max_tokens, temperature, etc. The LangChain Python library documentation has more details on the available options.
-    
-    </aside>
-    
-5. LangChain 支持哪些功能?
-    
-    <aside>
-    💡
-    
-    LangChain支持以下功能：
+
+### 5 LangChain 支持哪些功能?
+
+LangChain支持以下功能：
     
     1. 编写帖子的短标题：使用**`write_me_short_post`**函数可以生成关于特定主题、平台和受众的短标题。该函数的参数包括**`topic`**（主题）、**`platform`**（平台，默认为Twitter）和**`audience`**（受众，默认为开发人员）。生成的标题应该在15个单词以内。
     2. 模拟对话：使用**`simulate_conversation`**函数可以模拟对话，包括系统消息、用户消息和助手消息。对话可以根据角色（如助手、用户、系统）进行交互，并可以包含历史记录。这对于训练聊天模型非常有用。
@@ -355,11 +319,8 @@
     - 支持更复杂的数据结构
     </aside>
     
-6. 什么是 LangChain model?
-    
-    <aside>
-    💡
-    
+### 6 什么是 LangChain model?
+
     LangChain model 是一个基于语言模型的框架，用于构建聊天机器人、生成式问答（GQA）、摘要等功能。LangChain 的核心思想是可以将不同的组件“链”在一起，以创建更高级的语言模型应用。
     
     </aside>
@@ -369,7 +330,7 @@
     
     </aside>
     
-7. LangChain 包含哪些特点?
+### 7 LangChain 包含哪些特点?
     
     <aside>
     💡
@@ -389,7 +350,7 @@
     - 支持更复杂的数据结构
     </aside>
     
-8. LangChain 如何使用?
+### 8 LangChain 如何使用?
     1. LangChain 如何调用 LLMs 生成回复？
         
         <aside>
@@ -494,7 +455,7 @@
         💡
         
         要在LangChain中进行嵌入和向量存储，您可以使用LangChain框架提供的**`Embedding`**和**`VectorStore`**类。**`Embedding`**类用于将文本嵌入到向量空间中，而**`VectorStore`**类用于存储和检索嵌入向量。以下是一个示例代码片段，展示了如何在LangChain中进行嵌入和向量存储：
-        
+
         ```python
         from langchain.embeddings import Embedding
         from langchain.vectorstore import VectorStore
@@ -517,39 +478,25 @@
         print(vector)
         ```
         
-        在上面的代码中，我们首先创建了一个**`Embedding`**实例，并使用**`embed`**方法将文本嵌入到向量空间中。然后，我们创建了一个**`VectorStore`**实例，并使用**`store`**方法将嵌入向量存储到向量存储中。最后，我们使用**`retrieve`**方法检索嵌入向量，并打印出来。
-        
-        请注意，您可以根据需要添加、删除和修改嵌入向量。**`Embedding`**类和**`VectorStore`**类提供了多种方法来操作嵌入和向量存储。更多详细信息和示例代码可以在LangChain文档中找到。
-        
-        </aside>
-        
-9. LangChain 存在哪些问题及方法方案？
-    1. LangChain 低效的令牌使用问题
-        
-        <aside>
-        💡
-        
-        LangChain的token使用是高效的。LangChain使用了一种称为"token-based"的方法来处理文本输入和输出。这种方法将文本分解为小的单元，称为"tokens"，并对它们进行处理。相比于传统的字符或词语级别的处理，使用tokens可以更高效地处理文本。
-        
-        LangChain还提供了一些参数，如**`max_tokens`**和**`temperature`**，可以用来控制生成回复的长度和多样性。通过调整这些参数，开发人员可以根据自己的需求来平衡生成回复的效率和质量。
-        
-        总的来说，LangChain的token使用是高效的，并且开发人员可以通过调整参数来控制生成回复的效果。
-        
-        </aside>
-        
-    2. LangChain 文档的问题
-    3. LangChain 太多概念容易混淆，过多的“辅助”函数问题
-    4. LangChain 行为不一致并且隐藏细节问题
-    5. LangChain 缺乏标准的可互操作数据类型问题
-        
-        <aside>
-        💡 LangChain提供了一种标准的接口，使开发人员能够使用大型语言模型（LLM）处理自然语言处理任务。虽然LangChain支持更复杂的数据结构，但它目前缺乏标准的可互操作数据类型。这意味着LangChain在处理数据时可能需要进行一些额外的处理和转换。开发人员可以根据自己的需求使用LangChain提供的功能和工具来处理和操作数据。
-        
-        </aside>
-        
-10. LangChain 替代方案？
-    
-    <aside>
-    💡 LangChain是一个独特的框架，目前没有直接的替代方案。它提供了一种简化开发过程的方式，使开发人员能够更轻松地构建基于语言模型的应用程序。LangChain的特点包括编写自定义的LangChain提示和链式代码的语法糖、使用IDE内置的支持进行提示和类型检查、支持可选参数和共享参数等。虽然可能有其他类似的框架可用，但LangChain在其特定领域内提供了独特的功能和优势。
-    
-    </aside>
+在上面的代码中，我们首先创建了一个**`Embedding`**实例，并使用**`embed`**方法将文本嵌入到向量空间中。然后，我们创建了一个**`VectorStore`**实例，并使用**`store`**方法将嵌入向量存储到向量存储中。最后，我们使用**`retrieve`**方法检索嵌入向量，并打印出来。
+
+请注意，您可以根据需要添加、删除和修改嵌入向量。**`Embedding`**类和**`VectorStore`**类提供了多种方法来操作嵌入和向量存储。更多详细信息和示例代码可以在LangChain文档中找到。
+
+### 9 LangChain 存在哪些问题及方法方案？
+##### 1 LangChain 低效的令牌使用问题
+
+LangChain的token使用是高效的。LangChain使用了一种称为"token-based"的方法来处理文本输入和输出。这种方法将文本分解为小的单元，称为"tokens"，并对它们进行处理。相比于传统的字符或词语级别的处理，使用tokens可以更高效地处理文本。
+
+LangChain还提供了一些参数，如**`max_tokens`**和**`temperature`**，可以用来控制生成回复的长度和多样性。通过调整这些参数，开发人员可以根据自己的需求来平衡生成回复的效率和质量。
+
+总的来说，LangChain的token使用是高效的，并且开发人员可以通过调整参数来控制生成回复的效果。
+##### 2 LangChain 文档的问题
+##### 3 LangChain 太多概念容易混淆，过多的“辅助”函数问题
+##### 4 LangChain 行为不一致并且隐藏细节问题 
+##### 5 LangChain 缺乏标准的可互操作数据类型问题
+
+LangChain提供了一种标准的接口，使开发人员能够使用大型语言模型（LLM）处理自然语言处理任务。虽然LangChain支持更复杂的数据结构，但它目前缺乏标准的可互操作数据类型。这意味着LangChain在处理数据时可能需要进行一些额外的处理和转换。开发人员可以根据自己的需求使用LangChain提供的功能和工具来处理和操作数据。
+
+### 10 LangChain 替代方案？
+
+LangChain是一个独特的框架，目前没有直接的替代方案。它提供了一种简化开发过程的方式，使开发人员能够更轻松地构建基于语言模型的应用程序。LangChain的特点包括编写自定义的LangChain提示和链式代码的语法糖、使用IDE内置的支持进行提示和类型检查、支持可选参数和共享参数等。虽然可能有其他类似的框架可用，但LangChain在其特定领域内提供了独特的功能和优势。

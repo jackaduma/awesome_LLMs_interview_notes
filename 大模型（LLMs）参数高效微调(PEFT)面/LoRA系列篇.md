@@ -1,4 +1,4 @@
-#LLM #LoRA
+#LLM #LoRA #面试 
 
 - [[#一、LoRA篇|一、LoRA篇]]
 		- [[#1.1 什么是 LoRA？|1.1 什么是 LoRA？]]

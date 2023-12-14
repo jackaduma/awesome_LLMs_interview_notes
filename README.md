@@ -10,6 +10,8 @@ LLMs interview notes and answers
 <img src="./misc/说明文件.png">
 
 
+## BLOG 
+[llm大模型训练知乎专栏](https://www.zhihu.com/column/c_1252604770952642560)
 ------
 ## **Star-History**
 
